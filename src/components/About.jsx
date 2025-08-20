@@ -51,7 +51,7 @@ const About = () => {
       name: "Md Nahidul Islam Robin",
       role: "Chief Marketing Officer",
       description: "Nahid leads our marketing innovation with expertise in Digital marketing and  Customer Handling.",
-      image: "/images/sumayea.jpg",
+      image: "images/nahid.jpg",
       alt: "Nahid - CMO"
     }
   ]
