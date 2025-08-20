@@ -44,8 +44,8 @@ const About = () => {
       name: "Sumayea Chowdhury",
       role: "Client Relationship Officer",
       description: "Sumayea leads our client innovation with expertise in customer management and  relation.",
-      image: "/images/sabbir.jpg",
-      alt: "Md. Sabbir Hossain - CTO"
+      image: "/images/sumayea.jpg",
+      alt: "Sumayea - CRO"
     }
   ]
 
