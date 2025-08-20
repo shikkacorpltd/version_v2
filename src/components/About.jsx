@@ -37,7 +37,7 @@ const About = () => {
       name: "Md. Sabbir Hossain",
       role: "Chief Technology Officer",
       description: "Sabbir Hossain leads our technical innovation with expertise in educational software and system architecture.",
-      image: "/images/sabbir.jpeg",
+      image: "/images/sabbir.jpg",
       alt: "Md. Sabbir Hossain - CTO"
     }
   ]
