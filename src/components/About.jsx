@@ -30,14 +30,14 @@ const About = () => {
       name: "Fazle Rabbi Limon",
       role: "Chief Executive Officer",
       description: "With over 5 years of experience in educational technology leadership, Limon drives our vision and strategic direction.",
-      image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop",
+      image: "/images/limon.jpeg",
       alt: "Dr. Aminul Islam - CEO"
     },
     {
       name: "Md. Sabbir Hossain",
       role: "Chief Technology Officer",
       description: "Sabbir Hossain leads our technical innovation with expertise in educational software and system architecture.",
-      image: "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop",
+      image: "/images/sabbir.jpeg",
       alt: "Md. Sabbir Hossain - CTO"
     }
   ]
