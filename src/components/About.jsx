@@ -42,7 +42,7 @@ const About = () => {
     },
     {
       name: "Sumayea Chowdhury",
-      role: "Client Relationship Officer",
+      role: "Relationship Officer",
       description: "Sumayea leads our client innovation with expertise in customer management and  relation.",
       image: "/images/sumayea.jpg",
       alt: "Sumayea - CRO"
