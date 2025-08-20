@@ -30,8 +30,8 @@ const About = () => {
       name: "Fazle Rabbi Limon",
       role: "Chief Executive Officer",
       description: "With over 5 years of experience in educational technology leadership, Limon drives our vision and strategic direction.",
-      image: "/images/limon.jpeg",
-      alt: "Dr. Aminul Islam - CEO"
+      image: "/images/limon.jpg",
+      alt: " Fazle Rabbi Limon- CEO"
     },
     {
       name: "Md. Sabbir Hossain",
