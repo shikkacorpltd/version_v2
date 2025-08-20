@@ -54,13 +54,6 @@ const Navbar = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:flex">
-            <Link to="/contract">
-              <Button className="bg-emerald-600 hover:bg-emerald-700">
-                Support
-              </Button>
-            </Link>
-          </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -91,11 +84,6 @@ const Navbar = () => {
                   {item.name}
                 </Link>
               ))}
-              <Link to="/contract" onClick={() => setIsOpen(false)}>
-                <Button className="bg-emerald-600 hover:bg-emerald-700 w-full">
-                  Support
-                </Button>
-              </Link>
             </div>
           </div>
         )}
