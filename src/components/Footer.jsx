@@ -105,7 +105,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="flex items-center space-x-3">
               <MapPin className="h-5 w-5 text-emerald-400 flex-shrink-0" />
-              <span className="text-gray-300 text-sm"> Uttara, Dhaka ,Bangladesh</span>
+              <span className="text-gray-300 text-sm"> House # 03, Road #10, sector # 01. Uttara, Dhaka</span>
             </div>
             <div className="flex items-center space-x-3">
               <Phone className="h-5 w-5 text-emerald-400 flex-shrink-0" />
