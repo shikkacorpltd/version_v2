@@ -29,6 +29,7 @@ function App() {
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/contract" element={<Contract />} />
+            <Route path="/support" element={<GetStarted />} />
             <Route path="/get-started" element={<GetStarted />} />
           </Routes>
         </main>

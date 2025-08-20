@@ -57,7 +57,7 @@ const Navbar = () => {
           <div className="hidden md:flex">
             <Link to="/get-started">
               <Button className="bg-emerald-600 hover:bg-emerald-700">
-                Get Started
+                Support
               </Button>
             </Link>
           </div>
@@ -93,7 +93,7 @@ const Navbar = () => {
               ))}
               <Link to="/get-started" onClick={() => setIsOpen(false)}>
                 <Button className="bg-emerald-600 hover:bg-emerald-700 w-full">
-                  Get Started
+                  Support
                 </Button>
               </Link>
             </div>
