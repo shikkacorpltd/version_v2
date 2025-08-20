@@ -39,6 +39,13 @@ const About = () => {
       description: "Sabbir Hossain leads our technical innovation with expertise in educational software and system architecture.",
       image: "/images/sabbir.jpg",
       alt: "Md. Sabbir Hossain - CTO"
+    },
+    {
+      name: "Sumayea Chowdhury",
+      role: "Client Relationship Officer",
+      description: "Sumayea leads our client innovation with expertise in customer management and  relation.",
+      image: "/images/sabbir.jpg",
+      alt: "Md. Sabbir Hossain - CTO"
     }
   ]
 
