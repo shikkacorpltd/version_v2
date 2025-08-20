@@ -1,11 +1,10 @@
-// pages/get-started.js
 import { useState } from 'react';
-import { useRouter } from 'next/router';
-import Head from 'next/head';
+import { useNavigate } from 'react-router-dom';
 import { ArrowRight, Users, BookOpen, Award, TrendingUp, AlertCircle } from 'lucide-react';
+import { Button } from './ui/button';
 
-export default function GetStartedPage() {
-  const router = useRouter();
+export default function GetStarted() {
+  const navigate = useNavigate();
   const [currentStep, setCurrentStep] = useState(1);
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -93,7 +92,7 @@ Phone: ${formData.phone}
       `.trim()
     });
 
-    router.push(`/contact?${params.toString()}`);
+    navigate(`/contact?${params.toString()}`);
   };
 
   /* ---------- Render ---------- */
@@ -266,79 +265,72 @@ Phone: ${formData.phone}
   };
 
   return (
-    <>
-      <Head>
-        <title>Get Started | YourPlatform</title>
-        <meta name="description" content="Tell us about your school and get a personalized demo." />
-      </Head>
-
-      <main className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Progress bar */}
-          <div className="mb-8">
-            <div className="flex justify-between mb-2">
-              {[1, 2, 3, 4].map((step) => (
-                <div
-                  key={step}
-                  className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold ${
-                    step <= currentStep ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-600'
-                  }`}
-                >
-                  {step}
-                </div>
-              ))}
-            </div>
-            <div className="w-full bg-gray-200 rounded-full h-2">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12">
+      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Progress bar */}
+        <div className="mb-8">
+          <div className="flex justify-between mb-2">
+            {[1, 2, 3, 4].map((step) => (
               <div
-                className="bg-blue-600 h-2 rounded-full transition-all duration-300"
-                style={{ width: `${(currentStep / 4) * 100}%` }}
-              />
-            </div>
-          </div>
-
-          {/* Card */}
-          <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8">
-            {renderStep()}
-
-            {/* Navigation */}
-            <div className="flex justify-between mt-8">
-              <button
-                onClick={prevStep}
-                disabled={currentStep === 1}
-                className={`px-6 py-2 rounded-lg font-medium ${
-                  currentStep === 1
-                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                key={step}
+                className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold ${
+                  step <= currentStep ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-600'
                 }`}
               >
-                Previous
-              </button>
-
-              {currentStep < 4 ? (
-                <button
-                  onClick={nextStep}
-                  className="px-6 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 flex items-center space-x-2"
-                >
-                  <span>Next</span>
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-              ) : (
-                <button
-                  onClick={handleSubmit}
-                  disabled={isSubmitting}
-                  className={`px-6 py-2 rounded-lg font-medium ${
-                    isSubmitting
-                      ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                      : 'bg-green-600 text-white hover:bg-green-700'
-                  }`}
-                >
-                  {isSubmitting ? 'Submitting...' : 'Submit & Get Demo'}
-                </button>
-              )}
-            </div>
+                {step}
+              </div>
+            ))}
+          </div>
+          <div className="w-full bg-gray-200 rounded-full h-2">
+            <div
+              className="bg-blue-600 h-2 rounded-full transition-all duration-300"
+              style={{ width: `${(currentStep / 4) * 100}%` }}
+            />
           </div>
         </div>
-      </main>
-    </>
+
+        {/* Card */}
+        <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8">
+          {renderStep()}
+
+          {/* Navigation */}
+          <div className="flex justify-between mt-8">
+            <button
+              onClick={prevStep}
+              disabled={currentStep === 1}
+              className={`px-6 py-2 rounded-lg font-medium ${
+                currentStep === 1
+                  ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+              }`}
+            >
+              Previous
+            </button>
+
+            {currentStep < 4 ? (
+              <button
+                onClick={nextStep}
+                className="px-6 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 flex items-center space-x-2"
+              >
+                <span>Next</span>
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            ) : (
+              <button
+                onClick={handleSubmit}
+                disabled={isSubmitting}
+                className={`px-6 py-2 rounded-lg font-medium ${
+                  isSubmitting
+                    ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                    : 'bg-green-600 text-white hover:bg-green-700'
+                }`}
+              >
+                {isSubmitting ? 'Submitting...' : 'Submit & Get Demo'}
+              </button>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
