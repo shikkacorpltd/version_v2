@@ -55,7 +55,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex">
-            <Link to="/get-started">
+            <Link to="/contract">
               <Button className="bg-emerald-600 hover:bg-emerald-700">
                 Support
               </Button>
@@ -91,7 +91,7 @@ const Navbar = () => {
                   {item.name}
                 </Link>
               ))}
-              <Link to="/get-started" onClick={() => setIsOpen(false)}>
+              <Link to="/contract" onClick={() => setIsOpen(false)}>
                 <Button className="bg-emerald-600 hover:bg-emerald-700 w-full">
                   Support
                 </Button>
