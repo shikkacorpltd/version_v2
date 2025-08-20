@@ -46,6 +46,13 @@ const About = () => {
       description: "Sumayea leads our client innovation with expertise in customer management and  relation.",
       image: "/images/sumayea.jpg",
       alt: "Sumayea - CRO"
+    },
+    {
+      name: "Md Nahidul Islam Robin",
+      role: "Chief Marketing Officer",
+      description: "Nahid leads our marketing innovation with expertise in Digital marketing and  Customer Handling.",
+      image: "/images/sumayea.jpg",
+      alt: "Nahid - CMO"
     }
   ]
 
